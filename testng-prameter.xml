@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<parameter name="a" value="5" />
+	<parameter name="b" value="5" />
+	<test thread-count="5" name="sum">
+		<classes>
+
+			<class name="parameteriztionIntestNg.Sum" />
+
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="subtract">
+		<classes>
+
+			<class name="parameteriztionIntestNg.subtract" />
+
+		</classes>
+	</test> <!-- Test -->
+	<test thread-count="5" name="mutliplication">
+		<classes>
+
+			<class name="parameteriztionIntestNg.multiplication" />
+
+		</classes>
+	</test> <!-- Test -->
+</suite> <!-- Suite -->

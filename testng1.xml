@@ -3,13 +3,14 @@
 <suite name="Suite">
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.testNG_Practice.test.Module3">
+			<class name="include_exclude_regex.Module1">
+
 				<methods>
-					<include name="m3" />
-					<include name="m4" />
+					<include name="mobile.*"></include>
 				</methods>
 
 			</class>
+
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->
