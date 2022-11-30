@@ -6,7 +6,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-@Listeners(listenersInTestNg.ListenersTest.class)
+//@Listeners(listenersInTestNg.ListenersTest.class)
 public class Sum {
 
 	@Test

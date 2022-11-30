@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="1" failed="1" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-11-30T10:36:09Z" name="Suite" finished-at="2022-11-30T10:36:10Z" duration-ms="159">
+  <suite started-at="2022-11-30T11:04:36Z" name="Suite" finished-at="2022-11-30T11:04:36Z" duration-ms="61">
     <groups>
     </groups>
-    <test started-at="2022-11-30T10:36:09Z" name="sum" finished-at="2022-11-30T10:36:09Z" duration-ms="45">
-      <class name="parameteriztionIntestNg.Sum">
-        <test-method signature="sum(int, int)[pri:0, instance:parameteriztionIntestNg.Sum@4310d43]" started-at="2022-11-30T10:36:09Z" name="sum" finished-at="2022-11-30T10:36:09Z" duration-ms="10" status="PASS">
+    <test started-at="2022-11-30T11:04:36Z" name="Test" finished-at="2022-11-30T11:04:36Z" duration-ms="61">
+      <class name="listenersInTestNg.Sum">
+        <test-method signature="sum(int, int)[pri:0, instance:listenersInTestNg.Sum@1b11171f]" started-at="2022-11-30T11:04:36Z" name="sum" finished-at="2022-11-30T11:04:36Z" duration-ms="10" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,47 +23,85 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- sum -->
-      </class> <!-- parameteriztionIntestNg.Sum -->
-    </test> <!-- sum -->
-    <test started-at="2022-11-30T10:36:10Z" name="subtract" finished-at="2022-11-30T10:36:10Z" duration-ms="5">
-      <class name="parameteriztionIntestNg.subtract">
-        <test-method signature="sum(int, int)[pri:0, instance:parameteriztionIntestNg.subtract@6fdbe764]" started-at="2022-11-30T10:36:10Z" name="sum" finished-at="2022-11-30T10:36:10Z" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+        <test-method signature="testFailed()[pri:0, instance:listenersInTestNg.Sum@1b11171f]" started-at="2022-11-30T11:04:36Z" name="testFailed" finished-at="2022-11-30T11:04:36Z" duration-ms="4" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError
+at org.junit.Assert.fail(Assert.java:86)
+at org.junit.Assert.assertTrue(Assert.java:41)
+at org.junit.Assert.assertTrue(Assert.java:52)
+at listenersInTestNg.Sum.testFailed(Sum.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sum -->
-      </class> <!-- parameteriztionIntestNg.subtract -->
-    </test> <!-- subtract -->
-    <test started-at="2022-11-30T10:36:10Z" name="mutliplication" finished-at="2022-11-30T10:36:10Z" duration-ms="6">
-      <class name="parameteriztionIntestNg.multiplication">
-        <test-method signature="sum(int, int)[pri:0, instance:parameteriztionIntestNg.multiplication@7b36aa0c]" started-at="2022-11-30T10:36:10Z" name="sum" finished-at="2022-11-30T10:36:10Z" duration-ms="3" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[5]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testFailed -->
+        <test-method signature="testSkipped()[pri:0, instance:listenersInTestNg.Sum@1b11171f]" started-at="2022-11-30T11:04:36Z" name="testSkipped" finished-at="2022-11-30T11:04:36Z" duration-ms="3" status="SKIP">
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skip test methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skip test methods
+at listenersInTestNg.Sum.testSkipped(Sum.java:31)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:567)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- sum -->
-      </class> <!-- parameteriztionIntestNg.multiplication -->
-    </test> <!-- mutliplication -->
+        </test-method> <!-- testSkipped -->
+      </class> <!-- listenersInTestNg.Sum -->
+    </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>
